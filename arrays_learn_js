@@ -1,0 +1,14 @@
+let styles = ['rap','rnb','jazz','blues','pop'];
+
+if (styles.length % 2 != 0) {
+  let count = 0;
+  for (i = 0; i < styles.length; i++) {
+      count++;
+  }
+  let midItem = 0;
+  midItem = Math.floor(count/2);
+  styles[midItem] = 'classic';
+  alert(styles);
+} else {
+  alert('No middle element, arrays has even number of elements');
+};
